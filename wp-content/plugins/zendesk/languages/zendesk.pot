@@ -1,0 +1,634 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zendesk Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-06-01 10:21+0300\n"
+"PO-Revision-Date: 2011-06-01 10:21+0300\n"
+"Last-Translator: Konstantin Kovshenin <kovshenin@gmail.com>\n"
+"Language-Team: Zendesk <support@zendesk.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;_n;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../zendesk-api.php:74
+msgid "We could not authenticate you with Zendesk, please try again!"
+msgstr ""
+
+#: ../zendesk-api.php:135
+#: ../zendesk-api.php:138
+msgid "A new ticket could not be created at this time, please try again later."
+msgstr ""
+
+#: ../zendesk-api.php:163
+msgid "A new comment could not be created at this time, please try again later."
+msgstr ""
+
+#: ../zendesk-api.php:195
+msgid "A new request could not be created at this time, please try again later."
+msgstr ""
+
+#: ../zendesk-api.php:225
+msgid "The active views could not be fetched at this time, please try again later."
+msgstr ""
+
+#: ../zendesk-api.php:228
+msgid "Access denied You do not have access to this view."
+msgstr ""
+
+#: ../zendesk-api.php:255
+msgid "The ticket fields could not be fetched at this time, please try again later."
+msgstr ""
+
+#: ../zendesk-api.php:282
+msgid "The requests could not be fetched at this time, please try again later."
+msgstr ""
+
+#: ../zendesk-api.php:312
+msgid "The tickets for this view could not be fetched at this time, please try again later."
+msgstr ""
+
+#: ../zendesk-api.php:341
+msgid "Could not fetch the ticket at this time, please try again later."
+msgstr ""
+
+#: ../zendesk-api.php:370
+msgid "Could not fetch the request at this time, please try again later."
+msgstr ""
+
+#: ../zendesk-api.php:397
+msgid "The requested user details could not be fetched at this time, please try again later."
+msgstr ""
+
+#: ../zendesk-support.php:143
+msgid "How can we help you?"
+msgstr ""
+
+#: ../zendesk-support.php:144
+msgid "Briefly describe your question"
+msgstr ""
+
+#: ../zendesk-support.php:145
+msgid "Give us some further details"
+msgstr ""
+
+#: ../zendesk-support.php:146
+msgid "Submit"
+msgstr ""
+
+#: ../zendesk-support.php:210
+msgid "Your Zendesk Account"
+msgstr ""
+
+#: ../zendesk-support.php:211
+msgid "Subdomain"
+msgstr ""
+
+#: ../zendesk-support.php:215
+msgid "Use SSL"
+msgstr ""
+
+#: ../zendesk-support.php:220
+msgid "Dashboard Widget Visibility"
+msgstr ""
+
+#: ../zendesk-support.php:221
+msgid "Administrators"
+msgstr ""
+
+#: ../zendesk-support.php:222
+msgid "Editors"
+msgstr ""
+
+#: ../zendesk-support.php:223
+msgid "Authors"
+msgstr ""
+
+#: ../zendesk-support.php:224
+msgid "Contributors"
+msgstr ""
+
+#: ../zendesk-support.php:225
+msgid "Subscribers"
+msgstr ""
+
+#: ../zendesk-support.php:228
+msgid "Anonymous Requests"
+msgstr ""
+
+#: ../zendesk-support.php:229
+msgid "Anonymous Requests By"
+msgstr ""
+
+#: ../zendesk-support.php:231
+msgid "Contact Form Settings"
+msgstr ""
+
+#: ../zendesk-support.php:232
+msgid "Form Title"
+msgstr ""
+
+#: ../zendesk-support.php:233
+msgid "Summary Label"
+msgstr ""
+
+#: ../zendesk-support.php:234
+msgid "Details Label"
+msgstr ""
+
+#: ../zendesk-support.php:235
+msgid "Submit Button Label"
+msgstr ""
+
+#: ../zendesk-support.php:238
+msgid "Dropbox Settings"
+msgstr ""
+
+#: ../zendesk-support.php:239
+msgid "Display"
+msgstr ""
+
+#: ../zendesk-support.php:240
+msgid "Dropbox Code"
+msgstr ""
+
+#: ../zendesk-support.php:246
+msgid "Zendesk Configuration"
+msgstr ""
+
+#: ../zendesk-support.php:247
+msgid "Remote Login URL"
+msgstr ""
+
+#: ../zendesk-support.php:248
+msgid "Remote Logout URL"
+msgstr ""
+
+#: ../zendesk-support.php:251
+msgid "General Settings"
+msgstr ""
+
+#: ../zendesk-support.php:252
+msgid "Remote Auth Status"
+msgstr ""
+
+#: ../zendesk-support.php:253
+msgid "Remote Auth Shared Token"
+msgstr ""
+
+#: ../zendesk-support.php:273
+msgid "Zendesk Support Settings"
+msgstr ""
+
+#: ../zendesk-support.php:273
+msgid "Settings"
+msgstr ""
+
+#: ../zendesk-support.php:276
+msgid "Zendesk Remote Authentication"
+msgstr ""
+
+#: ../zendesk-support.php:276
+msgid "Remote Auth"
+msgstr ""
+
+#: ../zendesk-support.php:338
+msgid "Zendesk for WordPress Settings"
+msgstr ""
+
+#: ../zendesk-support.php:342
+msgid "You're almost there! Just one more thing..."
+msgstr ""
+
+#: ../zendesk-support.php:343
+msgid "Before you get your hands on all the juicy Zendesk for Wordpress features, we need to know your Zendesk subdomain. <br /> Your subdomain tells us who you are, and gives us access to the Zendesk API."
+msgstr ""
+
+#: ../zendesk-support.php:352
+#: ../zendesk-support.php:384
+msgid "Save Changes"
+msgstr ""
+
+#: ../zendesk-support.php:372
+msgid "Zendesk Remote Authentication Settings"
+msgstr ""
+
+#: ../zendesk-support.php:374
+msgid "Woah there Nelly!"
+msgstr ""
+
+#: ../zendesk-support.php:375
+msgid "Remote authentication takes a little bit of setup in here and inside Zendesk too. Don't worry, it's not rocket surgery."
+msgstr ""
+
+#: ../zendesk-support.php:376
+msgid "Check out this handy guide on getting it set up for WordPress."
+msgstr ""
+
+#: ../zendesk-support.php:493
+msgid "You have successfully logged out of your Zendesk account."
+msgstr ""
+
+#: ../zendesk-support.php:502
+msgid "You are not allowed to view the tickets widget"
+msgstr ""
+
+#: ../zendesk-support.php:542
+#: ../zendesk-support.php:593
+#: ../zendesk-support.php:602
+msgid "All fields are required. Please try again."
+msgstr ""
+
+#: ../zendesk-support.php:560
+msgid "My open requests"
+msgstr ""
+
+#: ../zendesk-support.php:575
+#, php-format
+msgid "Howdy, <strong>%s</strong>! You are now logged in to Zendesk."
+msgstr ""
+
+#: ../zendesk-support.php:588
+msgid "You are not allowed to view the contact form."
+msgstr ""
+
+#: ../zendesk-support.php:627
+msgid "Something went wrong. We could not use the agent to fire this request."
+msgstr ""
+
+#: ../zendesk-support.php:633
+#, php-format
+msgid "Wow, you managed to fire a request \"on behalf of\" yourself! Why don't you <a href=\"%s\">login first</a>?"
+msgstr ""
+
+#: ../zendesk-support.php:651
+msgid "Your request has been created successfully!"
+msgstr ""
+
+#: ../zendesk-support.php:683
+#, php-format
+msgid "<strong>%s</strong> said..."
+msgstr ""
+
+#: ../zendesk-support.php:689
+msgid "A new ticket will be created inside your Zendesk account, and your response below will be added as a comment to that ticket."
+msgstr ""
+
+#: ../zendesk-support.php:694
+msgid "<strong>You</strong> say:"
+msgstr ""
+
+#: ../zendesk-support.php:699
+msgid "Make this a public comment in the ticket"
+msgstr ""
+
+#: ../zendesk-support.php:700
+msgid "Post as a reply on this blog post"
+msgstr ""
+
+#: ../zendesk-support.php:703
+msgid "Create ticket"
+msgstr ""
+
+#: ../zendesk-support.php:740
+msgid "Whoopsie! Problem communicating with Zendesk. Try that again."
+msgstr ""
+
+#: ../zendesk-support.php:807
+msgid "A ticket has been created, but failed to post a comment to it."
+msgstr ""
+
+#: ../zendesk-support.php:869
+#, php-format
+msgid "%s said..."
+msgstr ""
+
+#: ../zendesk-support.php:948
+msgid "Access denied"
+msgstr ""
+
+#: ../zendesk-support.php:989
+msgid "Unknown"
+msgstr ""
+
+#: ../zendesk-support.php:1004
+msgid "Subject:"
+msgstr ""
+
+#: ../zendesk-support.php:1005
+msgid "Description:"
+msgstr ""
+
+#: ../zendesk-support.php:1006
+msgid "Ticket Status:"
+msgstr ""
+
+#: ../zendesk-support.php:1007
+msgid "Requested by:"
+msgstr ""
+
+#: ../zendesk-support.php:1008
+msgid "Created:"
+msgstr ""
+
+#: ../zendesk-support.php:1009
+msgid "Updated:"
+msgstr ""
+
+#: ../zendesk-support.php:1037
+msgid "Comments:"
+msgstr ""
+
+#: ../zendesk-support.php:1037
+msgid "View the comments thread"
+msgstr ""
+
+#: ../zendesk-support.php:1038
+msgid "View:"
+msgstr ""
+
+#: ../zendesk-support.php:1038
+msgid "View this ticket on Zendesk"
+msgstr ""
+
+#: ../zendesk-support.php:1058
+msgid "Custom Fields"
+msgstr ""
+
+#: ../zendesk-support.php:1069
+msgid "Actions"
+msgstr ""
+
+#: ../zendesk-support.php:1099
+msgid "Ticket was not found."
+msgstr ""
+
+#: ../zendesk-support.php:1126
+msgid "Zendesk Support"
+msgstr ""
+
+#: ../zendesk-support.php:1136
+msgid "Zendesk Support Login"
+msgstr ""
+
+#: ../zendesk-support.php:1146
+msgid "Zendesk for WordPress"
+msgstr ""
+
+#: ../zendesk-support.php:1164
+#, php-format
+msgid "Howdy! You're almost ready to go, we just need you to <a href='%s'>set up a few things first.</a>"
+msgstr ""
+
+#: ../zendesk-support.php:1167
+msgid "Howdy! Looks like the WordPress administrator hasn't set this plugin up yet. Give them a poke to get moving!"
+msgstr ""
+
+#: ../zendesk-support.php:1188
+msgid "Use your Zendesk account credentials to log in the form below. Please note that these are not your WordPress username and password."
+msgstr ""
+
+#: ../zendesk-support.php:1193
+msgid "Username:"
+msgstr ""
+
+#: ../zendesk-support.php:1197
+msgid "Password:"
+msgstr ""
+
+#: ../zendesk-support.php:1201
+msgid "Login to Zendesk"
+msgstr ""
+
+#: ../zendesk-support.php:1202
+msgid "Don't have an account?"
+msgstr ""
+
+#: ../zendesk-support.php:1202
+msgid "Sign up!"
+msgstr ""
+
+#: ../zendesk-support.php:1242
+#, php-format
+msgid "Logged in as <strong>%s</strong>"
+msgstr ""
+
+#: ../zendesk-support.php:1242
+#: ../zendesk-support.php:1345
+msgid "logout"
+msgstr ""
+
+#: ../zendesk-support.php:1246
+#: ../zendesk-support.php:1346
+msgid "powered by Zendesk"
+msgstr ""
+
+#: ../zendesk-support.php:1302
+msgid "Change view"
+msgstr ""
+
+#: ../zendesk-support.php:1302
+msgid "cancel"
+msgstr ""
+
+#: ../zendesk-support.php:1326
+msgid "There are no views available for this account."
+msgstr ""
+
+#: ../zendesk-support.php:1336
+msgid "Viewing Ticket"
+msgstr ""
+
+#: ../zendesk-support.php:1336
+msgid "back"
+msgstr ""
+
+#: ../zendesk-support.php:1344
+msgid "My Helpdesk"
+msgstr ""
+
+#: ../zendesk-support.php:1345
+msgid "Logged in as"
+msgstr ""
+
+#: ../zendesk-support.php:1370
+msgid "change view"
+msgstr ""
+
+#: ../zendesk-support.php:1388
+msgid "There are no tickets in this view."
+msgstr ""
+
+#: ../zendesk-support.php:1407
+msgid "Don't display anything"
+msgstr ""
+
+#: ../zendesk-support.php:1408
+msgid "Show a Contact Form"
+msgstr ""
+
+#: ../zendesk-support.php:1409
+msgid "Show the Tickets widget"
+msgstr ""
+
+#: ../zendesk-support.php:1428
+msgid "Convert to Zendesk Ticket"
+msgstr ""
+
+#: ../zendesk-support.php:1485
+#: ../zendesk-support.php:1537
+msgid "Remote authentication is not configured yet."
+msgstr ""
+
+#: ../zendesk-support.php:1557
+msgid "Remote authentication failed: "
+msgstr ""
+
+#: ../zendesk-support.php:1559
+msgid "Try again"
+msgstr ""
+
+#: ../zendesk-support.php:1560
+#, php-format
+msgid "Log out of %s"
+msgstr ""
+
+#: ../zendesk-support.php:1561
+#, php-format
+msgid "Return to %s dashboard"
+msgstr ""
+
+#: ../zendesk-support.php:1581
+msgid "We need your Zendesk subdomain, so we can use Zendesk's API to get your ticket information."
+msgstr ""
+
+#: ../zendesk-support.php:1601
+msgid "Click here to change your subdomain"
+msgstr ""
+
+#: ../zendesk-support.php:1618
+msgid "Your account is using SSL"
+msgstr ""
+
+#: ../zendesk-support.php:1620
+msgid "Your account is <strong>not</strong> using SSL"
+msgstr ""
+
+#: ../zendesk-support.php:1633
+msgid "The Dashboard Widget can be changed depending on a User's capabilitites."
+msgstr ""
+
+#: ../zendesk-support.php:1667
+msgid "The contact form is a way for users to submit support requests. It can be added to the dashboard using the options above."
+msgstr ""
+
+#: ../zendesk-support.php:1738
+msgid "Check this to allow users without Zendesk accounts to submit requests."
+msgstr ""
+
+#: ../zendesk-support.php:1739
+msgid "If disabled, users will need to login to Zendesk to submit requests."
+msgstr ""
+
+#: ../zendesk-support.php:1776
+msgid "Contact form submissions will be done \"via\" this agent, through the Zendesk API. <br /> This agent must be authenticated into Zendesk via the Wordpress for Zendesk widget.<br /> Agents not authenticated via the dashboard widget are not shown here."
+msgstr ""
+
+#: ../zendesk-support.php:1777
+msgid "Learn more at Zendesk.com"
+msgstr ""
+
+#: ../zendesk-support.php:1787
+msgid "The Zendesk Dropbox places a convenient tab on your pages that allow your visitors to contact you via a pop-up form."
+msgstr ""
+
+#: ../zendesk-support.php:1801
+msgid "Do not display the Zendesk dropbox anywhere"
+msgstr ""
+
+#: ../zendesk-support.php:1802
+msgid "Display the Zendesk dropbox on all posts and pages"
+msgstr ""
+
+#: ../zendesk-support.php:1803
+msgid "I will decide where the Zendesk dropbox displays using a template tag"
+msgstr ""
+
+#: ../zendesk-support.php:1819
+#, php-format
+msgid "Obtain your Dropbox code from the %s in your Zendesk."
+msgstr ""
+
+#: ../zendesk-support.php:1819
+msgid "Dropbox Configuration page"
+msgstr ""
+
+#: ../zendesk-support.php:1830
+msgid "The general remote authentication settings"
+msgstr ""
+
+#: ../zendesk-support.php:1847
+msgid "Remote authentication is enabled"
+msgstr ""
+
+#: ../zendesk-support.php:1849
+msgid "Remote authentication is <strong>disabled</strong>"
+msgstr ""
+
+#: ../zendesk-support.php:1852
+msgid "To activate remote authentication, ensure a shared token <br /> is entered below and click &quot;Save Changes&quot;"
+msgstr ""
+
+#: ../zendesk-support.php:1870
+#, php-format
+msgid "Your shared token could be obtained on the %s in the <br /> Single Sign-On section."
+msgstr ""
+
+#: ../zendesk-support.php:1870
+msgid "Account Security page"
+msgstr ""
+
+#: ../zendesk-support.php:1872
+#, php-format
+msgid "<strong>Remember</strong> that you can always go to: <br /> %s to use the regular login <br /> in case you get unlucky and somehow lock yourself out of Zendesk."
+msgstr ""
+
+#: ../zendesk-support.php:1882
+msgid "The settings that need to be configured in your Zendesk account."
+msgstr ""
+
+#: ../zendesk-support.php:1976
+#, php-format
+msgid "<strong>Whoops!</strong> The user specified as the anonymous requests author is not logged in to Zendesk! You can %s or kindly ask them to log in."
+msgstr ""
+
+#: ../zendesk-support.php:1976
+msgid "change the user"
+msgstr ""
+
+#: ../zendesk-support.php:1992
+msgid "New"
+msgstr ""
+
+#: ../zendesk-support.php:1993
+msgid "Open"
+msgstr ""
+
+#: ../zendesk-support.php:1994
+msgid "Pending"
+msgstr ""
+
+#: ../zendesk-support.php:1995
+msgid "Solved"
+msgstr ""
+
+#: ../zendesk-support.php:1996
+msgid "Closed"
+msgstr ""
+

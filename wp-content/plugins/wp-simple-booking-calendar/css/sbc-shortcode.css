@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+/* ----- Token Metabox ----- */
+#sbc-metabox h4 {
+	border-bottom: 1px dashed #dfdfdf;
+	font-size: 14px;
+	margin: 0;
+	padding: 10px 0;
+}
+
+#sbc-metabox .form-table th {
+	vertical-align: middle;
+}
+
+#sbc-metabox .form-table th.top {
+	vertical-align: top;
+}

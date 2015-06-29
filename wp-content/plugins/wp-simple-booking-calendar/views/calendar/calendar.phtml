@@ -1,0 +1,112 @@
+<?php
+/**
+ * @package WP Simple Booking Calendar
+ *
+ * Copyright (c) 2010 Lennart Visscher
+ */
+
+global $wp_locale;
+
+$weekBegins = intval(get_option('start_of_week'));
+
+$currentTimestamp = current_time('timestamp');
+$currentYear = (int) gmdate('Y', ($this->timestamp ? $this->timestamp : $currentTimestamp));
+$currentMonth = (int) gmdate('m', ($this->timestamp ? $this->timestamp : $currentTimestamp));
+
+$unixMonth = mktime(0, 0, 0, $currentMonth, 1, $currentYear);
+$daysInMonth = intval(date('t', $unixMonth));
+
+?>
+<div id="sbc-calendar">
+  <div class="sbc-calendar-month">
+	<?php if (!$this->includeCalendarEditor): ?>
+	<form action="<?php echo esc_url(admin_url('admin-ajax.php')) ?>" method="post">
+	<?php endif ?>
+		<div class="sbc-navigation">
+   			<select name="sbcMonth">
+   				<?php for ($monthIndex = 1; $monthIndex <= 12; $monthIndex++): ?>
+   				<option value="<?php echo esc_attr($monthIndex) ?>" <?php if ($monthIndex == $currentMonth): ?> selected="selected"<?php endif ?>><?php echo esc_html($wp_locale->get_month($monthIndex)) ?></option>
+   				<?php endfor ?>
+			</select>
+			<select name="sbcYear">
+   				<?php $yearIndexStart = (int) gmdate('Y', $currentTimestamp) ?>
+   				<?php for ($yearIndex = $yearIndexStart; $yearIndex <= $yearIndexStart + 15; $yearIndex++): ?>
+   				<option value="<?php echo esc_attr($yearIndex) ?>" <?php if ($yearIndex == $currentYear): ?> selected="selected"<?php endif ?>><?php echo esc_html($yearIndex) ?></option>
+   				<?php endfor ?>
+			</select>
+		</div>
+	<?php if (!$this->includeCalendarEditor): ?>
+	</form>
+	<?php endif ?>
+	<table>
+		<thead>
+			<tr>
+				<?php for ($weekDay = 0; $weekDay <= 6; $weekDay++): ?>
+				<th scope="col"><?php echo esc_attr($wp_locale->get_weekday_initial($wp_locale->get_weekday(($weekDay + $weekBegins) % 7))) ?></th>
+				<?php endfor ?>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td colspan="7" class="pad">
+					<div class="sbc-loader"><?php esc_html_e('Loading...', 'sbc') ?></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="7" class="pad">
+					<a class="sbc-prev-month" href="#"><?php _e('&lt;&lt; Previous', 'sbc') ?></a> | <a class="sbc-next-month" href="#"><?php _e('Next &gt;&gt;', 'sbc') ?></a>
+				</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<?php $pad = calendar_week_mod(date('w', $unixMonth) - $weekBegins); if (0 != $pad): ?>
+				<td colspan="<?php echo esc_attr($pad) ?>" class="pad">&nbsp;</td>
+				<?php endif ?>
+	
+				<?php for ($day = 1; $day <= $daysInMonth; ++$day): ?>
+					<?php if (!empty($newRow)): $newRow = false ?>
+					</tr>
+					<tr>
+					<?php endif ?>
+					
+					<?php $dayStatus = (!empty($this->calendarData->{'year' . $currentYear}->{'month' . $currentMonth}->{'day' . $day}) ? $this->calendarData->{'year' . $currentYear}->{'month' . $currentMonth}->{'day' . $day} : 'free') ?>
+					<?php $isToday = ($day == gmdate('j', $currentTimestamp) && $currentMonth == gmdate('m', $currentTimestamp) && $currentYear == gmdate('Y', $currentTimestamp)) ?>
+					<td class="sbc-day<?php echo esc_attr($day) ?> sbc-status-<?php echo esc_attr($dayStatus) ?> <?php if ($isToday): ?> sbc-today<?php endif ?>">
+						<?php echo esc_html($day) ?>
+					</td>
+	
+					<?php if (6 == calendar_week_mod(date('w', mktime(0, 0 , 0, $currentMonth, $day, $currentYear)) - $weekBegins)): $newRow = true; endif ?>
+				<?php endfor ?>
+				
+				<?php $pad = 7 - calendar_week_mod(date('w', mktime(0, 0 , 0, $currentMonth, $day, $currentYear)) - $weekBegins); if ($pad != 0 && $pad != 7): ?>
+					<td class="pad" colspan="<?php echo esc_attr($pad) ?>">&nbsp;</td>
+				<?php endif ?>
+			</tr>
+		</tbody>
+	</table>
+  </div>
+</div>
+
+
+<?php if ($this->includeCalendarEditor): ?>
+<div id="sbc-editor">
+	<table>
+		<tbody>
+			<?php for ($day = 1; $day <= $daysInMonth; ++$day): $dayStatus = (!empty($this->calendarData->{'year' . $currentYear}->{'month' . $currentMonth}->{'day' . $day}) ? $this->calendarData->{'year' . $currentYear}->{'month' . $currentMonth}->{'day' . $day} : 'free') ?>
+			<tr>
+				<td class="sbc-editor-day sbc-status-<?php echo esc_attr($dayStatus) ?>"><?php echo esc_html($day) ?></td>
+				<td class="sbc-editor-status">
+					<select name="day<?php echo esc_attr($day) ?>">
+						<?php $bookingStatus = array('free' => __('Free', 'sbc'), 'booked' => __('Booked', 'sbc'), 'changeover' => __('Changeover', 'sbc')) ?>
+						<?php foreach ($bookingStatus as $statusKey => $statusName): ?>
+						<option class="sbc-status-<?php echo esc_attr($statusKey) ?>" value="<?php echo esc_attr($statusKey) ?>"<?php if ($statusKey == $dayStatus): ?> selected="selected"<?php endif ?>><?php echo esc_html($statusName) ?></option>
+						<?php endforeach ?>
+					</select>
+				</td>
+			</tr>
+			<?php endfor ?>
+		</tbody>
+	</table>
+</div>
+<?php endif ?>

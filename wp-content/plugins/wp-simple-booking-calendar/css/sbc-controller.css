@@ -1,0 +1,92 @@
+@CHARSET "UTF-8";
+
+#sbc-wrapper div.postbox-container {
+	float: none;
+	padding: 0;
+	min-width: 440px;
+	width: 440px;
+}
+
+#sbc-calendar {
+float: left;
+margin: 0 3px 30px 0;
+}
+
+#sbc-wrapper div.postbox div.inside {
+	margin: 14px 18px 18px;
+	position: relative;
+}
+
+#sbc-wrapper div.postbox-container p {
+	margin: 20px 0;
+} 
+
+#sbc-wrapper div.postbox-container label {
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 3px;
+}
+
+#sbc-wrapper div.postbox-container label em {
+	color: #62625A;
+	font-weight: normal;
+}
+
+#sbc-wrapper div.postbox div.inside textarea {
+	width: 100%;
+}
+
+#sbc-wrapper div.postbox div.inside input, #sbc-wrapper div.postbox div.inside textarea {
+	margin: 1px;
+	padding: 3px;
+}
+
+#sbc-wrapper div.postbox div.inside input.error, #sbc-wrapper div.postbox div.inside textarea.error {
+	margin: 1px 1px 3px 1px;
+	padding: 3px;
+}
+
+#sbc-wrapper .tablenav {
+	line-height: 30px;
+}
+
+#sbc-wrapper p.search-box {
+	height: 30px;
+	line-height: 30px;
+	margin: 0;
+}
+
+#sbc-wrapper div.loader {
+	display: none;
+	height: 55px;
+}
+
+
+
+div.buy-full h1 {font-weight:bold; font-size:20px; line-height:30px; margin-top:30px;}
+div.buy-full .box {float:left; padding:15px 15px 7px 15px; width:255px; border:1px solid #cccccc; margin-right:15px; background-color:#fff;}
+div.buy-full .box h1 {padding:0px; margin:0px; border-bottom:1px solid #cccccc; color:#0084ff; font-weight:normal; font-size:26px; display:block; text-align:center; padding:11px 0 26px 0;}
+div.buy-full .box ul {list-style:none; padding-top:9px; display:block; height:290px;}
+
+div.buy-full .box ul li {background: transparent url(../images/checked-icon.jpg) no-repeat left 6px; color:#666666; font-size:14px; padding:6px 0 5px 21px;}
+div.buy-full .box h2 {font-weight:normal; display:block; text-align:center; color:#0084ff; font-size:30px; float:left; margin:0 0 0 25px;}
+div.buy-full .box small {color:#0084ff; font-size:14px;  display:block; margin:7px 0 0 -7px; float:left;}
+div.buy-full .box span {display:block; height:30px; line-height:30px; text-align:center;}
+div.buy-full .box p {font-size:14px; color:#666666; padding:13px 20px 6px 20px;}
+div.buy-full .box strong {font-weight:normal; color:#0084ff;}
+div.buy-full .box a.button {-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;font-size:18px; color:#ffffff; text-shadow:0px 2px 2px rgba(0, 0, 0, 0.4); display:block; height:45px; line-height:45px; text-align:center; background: transparent url(../images/button-bg.png) repeat-x left top; border:none; text-decoration:none; clear:both;}
+div.buy-full .box a.button:hover {background-position:left bottom;}
+div.buy-full .box div.bottom {background-color:#ececec; padding:15px; width:255px; margin:19px 0 0 -15px;}
+
+div.buy-full .box.first div.bottom {height:75px; line-height:75px; text-align:center; padding-top:0px; padding-bottom:0px;}
+div.buy-full .box.first div.bottom p {line-height:75px; text-align:center; padding:0px; margin:0px;}
+div.buy-full .box small.bottom {color:#666666; font-size:12px; display:block; text-align:center; float:none;}
+
+
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    div.buy-full .box p {padding:13px 20px 10px 20px;}
+}

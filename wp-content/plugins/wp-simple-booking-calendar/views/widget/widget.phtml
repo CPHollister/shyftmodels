@@ -1,0 +1,26 @@
+<?php
+/**
+ * @package WP Simple Booking Calendar
+ *
+ * Copyright (c) 2010 Lennart Visscher
+ */
+
+if (null === $this->calendar):
+	return;
+endif;
+
+echo $this->args['before_widget'];
+
+if ($this->showTitle):
+	echo $this->args['before_title'], esc_html($this->calendar['calendarName']), $this->args['after_title'];
+endif;
+
+$this->calendarData = json_decode($this->calendar['calendarJson']);
+
+?>
+<div id="sbc-calendar-wrapper" class="sbc-calendar-wrapper">
+	<?php $this->render('calendar/calendar') ?>
+</div>
+<?php
+
+echo $this->args['after_widget'];

@@ -1,0 +1,25 @@
+<?php
+/**
+ * @package WP Simple Booking Calendar
+ *
+ * Copyright (c) 2010 Lennart Visscher
+ */
+
+if (!function_exists('renderSbcWidgetOption')): function renderSbcWidgetOption(WpSimpleBookingCalendar_View $view, $title, $name, $options = array())
+{
+?>
+	<p>
+		<label for="<?php echo $view->widget->get_field_id($name) ?>"><?php echo $title ?>:</label>
+		<select name="<?php echo $view->widget->get_field_name($name) ?>" id="<?php echo $view->widget->get_field_id($name) ?>">
+			<?php foreach ($options as $value => $label): ?>
+			<option value="<?php esc_attr_e($value) ?>"<?php if ($view->settings[$name] == $value): ?> selected="selected"<?php endif ?>><?php esc_html_e($label) ?></option>
+			<?php endforeach ?>
+		</select>
+	</p>
+<?php
+}
+endif;
+
+$yesNoOptions = array('yes' => __('Yes', 'sbc'), 'no' => __('No', 'sbc'));
+
+renderSbcWidgetOption($this, __('Show Calendar Title', 'sbc'), 'title', $yesNoOptions);

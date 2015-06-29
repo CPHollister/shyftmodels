@@ -1,0 +1,401 @@
+/*
+ * Zendesk for WordPress
+ *
+ * The following stylesheet is present on each and every admin page
+ * in WordPress, thus the "zendesk" prefix and postfix isolation. Mostly
+ * used for the dashboard widget (contact form and tickets widget) as
+ * well as some generic stuff.
+ *
+ */
+
+/* Powered by Zendesk logo */
+.powered-by-zendesk {
+	display: inline-block;
+	width: 75px;
+	height: 21px;
+	text-indent: -3000px;
+	background: url(../images/powered-by.png) 99% 95% no-repeat;
+	float: right;
+	margin-right: 5px;
+}
+
+/* Admin Notices */
+.zendesk-admin-notice {
+	padding: 6px;
+	border-radius: 3px;
+	border: solid 1px black;
+	background: #eee;
+	margin-bottom: 2px;
+}
+
+.zendesk-notices-group {
+	clear: both;
+	margin-bottom: 10px;
+}
+
+.zendesk-admin-notice p {
+	margin: 0;
+}
+
+.zendesk-admin-notice.zendesk-note {
+	background-color: #FFFBCC;
+	border-color: #E6DB55;
+}
+
+.zendesk-admin-notice.zendesk-confirm {
+	background-color: #ccffce;
+	border-color: #55e688;
+}
+
+.zendesk-admin-notice.zendesk-alert {
+	background-color: #ffcccc;
+	border-color: #e65555;
+}
+
+/* Tickets Table */
+#zendesk-dashboard-widget > .inside {
+	margin: 0 !important;
+	min-height: 15px;
+}
+
+.zendesk-tickets-widget {
+	float: left;
+	width: 100%;
+}
+
+.zendesk-tickets-widget .zendesk-heading {
+	font-style: italic;
+	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	color: #777;
+	font-size: 16px;
+	margin: 2px 8px 8px 8px;
+}
+
+.zendesk-tickets-widget .zendesk-heading-link {
+	font-size: 12px;
+}
+
+.zendesk-tickets-widget .zendesk-ticket-subject {
+	line-height: 16px;
+	height: 16px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.zendesk-tickets-widget table {
+	border-top: #ECECEC 1px solid;
+	float: left;
+	position: relative;
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.zendesk-tickets-widget td {
+	padding: 8px;
+	border-bottom: #ECECEC 1px solid;
+	font-size: 12px;
+}
+
+.zendesk-tickets-widget .zendesk-loader {
+	margin-top: 3px;
+	margin-bottom: 2px;
+}
+
+.zendesk-tickets-bottom {
+	margin: 6px 8px;
+}
+
+td.zendesk-ticket-id {
+	padding-right: 0px;
+	text-align: right;
+	font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+	font-size: 14px;
+	vertical-align: top;
+	width: 1%;
+}
+
+td.zendesk-ticket-status {
+	text-align: right;
+	padding-left: 0px;
+	padding-right: 10px;
+	width: 1%;
+}
+
+.zendesk-status-pending, .zendesk-status-new {
+	color: green;
+}
+
+.zendesk-status-open {
+	color: #E66F00;
+}
+
+.zendesk-view-empty {
+	color: #777;
+}
+
+.zendesk-view-loading {
+	padding-left: 24px;
+	background: url(../images/loader-blue.gif) 0 2px no-repeat;
+}
+
+/* Login */
+.zendesk-buddha, .zendesk-buddha-smaller {
+	float: left;
+	margin-right: 10px;
+}
+
+.zendesk-buddha-smaller {
+  width: 20px;
+}
+
+#zendesk-login .submit {
+	margin-top: 10px;
+	margin-left: 110px !important;
+	display: inline-block;
+}
+
+#zendesk-login input[type="text"],
+#zendesk-login input[type="password"] {
+	width: 50%;
+	max-width: 200px;
+}
+
+#zendesk-login label {
+	width: 110px;
+	display: inline-block;
+	text-align: right;
+	font-size: 12px;
+	padding-bottom: 4px;
+}
+
+/* Ticket Details */
+.zendesk-ticket-details-table {
+	line-height: 18px;
+}
+
+.zendesk-ticket-details-table .zendesk-first {
+	width: 1%;
+	text-align: right;
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+/* Zendesk Loader */
+.zendesk-loader {
+	background: url(../images/loader-blue.gif) 0 0 no-repeat;
+	display: inline-block;
+	width: 16px;
+	height: 11px;
+	text-indent: -3000px;
+}
+
+/* Zendesk Dialogs */
+#zendesk-dialog-inner {
+	background: #F6F6F6;
+	padding: 10px;
+}
+
+#zendesk-dialog-inner h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	color: #555;
+	font-weight: normal;
+	margin-top: 4px;
+}
+
+#zendesk-dialog-body {
+	background-color: white;
+	border: 1px solid #DDD;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+	padding: 20px;
+	display: block;
+}
+
+#zendesk-dialog-footer {
+	margin-top: 10px;
+}
+
+/* Comment to Ticket */
+.zendesk-comment-to-ticket {
+	margin-top: 10px;
+}
+
+.zendesk-comment-box {
+	display: block;
+	float: left;
+	clear: both;
+	margin-left: 60px;
+	margin-top: -40px;
+	background: #f6f6f6;
+	margin-bottom: 10px;
+	width: 525px;
+	position: relative;
+}
+
+.zendesk-comment-box p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.zendesk-comment-box p.zendesk-author {
+	margin-left: 10px;
+	margin-top: 6px;
+}
+
+.zendesk-comment-box p.zendesk-comment-date {
+	margin-left: 10px;
+	font-size: 11px;
+	color: #999;
+	font-style: italic;
+}
+
+.zendesk-comment-to-ticket img.avatar {
+	float: left;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.zendesk-comment-arrow {
+	width: 10px;
+	height: 21px;
+	background: url(../images/comment-arrow.png) 0 0 no-repeat;
+	position: absolute;
+	left: -10px;
+	top: 10px;
+}
+
+p.zendesk-after-comment-box {
+	color: #999;
+	font-style: italic;
+	margin-left: 60px;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+
+.zendesk-comment-attachments {
+	margin-top: 20px;
+}
+
+.zendesk-comment-attachment {
+	background: url(../images/attachment.png) 0 0 no-repeat;
+	margin-top: 0;
+	margin-bottom: 6px;
+}
+
+.zendesk-comment-attachment a {
+	margin-left: 20px;
+}
+
+.zendesk-attachment-size {
+	color: #999;
+	font-size: 10px;
+}
+
+textarea.zendesk-comment-reply {
+	resize:none;
+	display: block;
+	width: 504px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	height: 180px;
+}
+
+.zendesk-comment-box .zendesk-options {
+	margin-left: 10px;
+	margin-bottom: 10px;
+	float: left;
+	width: 300px;
+}
+
+.zendesk-comment-box .zendesk-options label {
+	float: left;
+	clear: both;
+	color: #999;
+}
+
+.zendesk-submit {
+	float: right;
+	margin-right: 10px;
+}
+
+.zendesk-comment-box .zendesk-notices {
+	margin: 12px;
+}
+
+.zendesk-comment-box .zendesk-notices p {
+	margin-left: 0;
+}
+
+.zendesk-comment-box .zendesk-loader {
+	float: right;
+	margin-right: 20px;
+	margin-top: 6px;
+}
+
+#zendesk-dialog-success {
+	text-align: center;
+	color: #666;
+	background: #F6F6F6;
+	padding: 10px;
+}
+
+#zendesk-dialog-success .success-title {
+	font-size: 50px;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+#zendesk-dialog-success .button {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+#zendesk-dialog-success .zendesk-success-logo {
+	float: left;
+	/*width: 150px;*/
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+#zendesk-dialog-success .success-ticket-id {
+	color: #1A6690;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Settings pages */
+#icon-zendesk-32 {
+	background: url(../images/zendesk-32.png) 0 0 no-repeat;
+}
+
+.form-table td {
+  font-size: 12px;
+}
+
+th#zendesk {
+	width: 100px;
+}
+
+a.zendesk-comment-ticket-id {
+	background: #98c332;
+	color: white;
+	padding: 2px 6px;
+	font-size: 10px;
+	margin-top: 2px;
+	float: left;
+	border-radius: 5px;
+}
+
+a.zendesk-comment-ticket-id:hover {
+	color: white;
+}
+
+/* WordPress 2.9.2 */
+input.large-text {
+	width: 99%;
+}

@@ -1,0 +1,41 @@
+<?php
+/**
+ * @package WP Simple Booking Calendar
+ *
+ * Copyright (c) 2010 Lennart Visscher
+ */
+
+function renderTokenOption(WpSimpleBookingCalendar_View $view, $title, $name, $options)
+{
+	?>
+	<tr>
+		<th scope="row">
+			<label for="sbcMetabox_<?php esc_attr_e($name) ?>"><?php echo $title ?>:</label>
+		</th>
+		<td>
+			<select name="sbcMetabox[<?php esc_attr_e($name) ?>]" id="sbcMetabox_<?php esc_attr_e($name) ?>">
+				<?php foreach ((array) $options as $value => $label): ?>
+				<option value="<?php esc_attr_e($value) ?>"><?php esc_html_e($label) ?></option>
+				<?php endforeach ?>
+			</select>
+		</td>
+	</tr>
+	<?php
+}
+
+?>
+<table class="form-table">
+	<tbody>
+		<?php
+			$yesNoOptions = array('yes' => __('Yes', 'sbc'), 'no' => __('No', 'sbc'));
+            
+			renderTokenOption($this, __('Show Calendar Title', 'sbc'), 'title', $yesNoOptions);
+		?>
+	</tbody>
+</table>
+
+<p class="submit">
+	<input type="button" value="<?php esc_attr_e('Send Token to Editor &raquo;', 'sbc') ?>" />
+</p>
+
+<div class="clear"></div>

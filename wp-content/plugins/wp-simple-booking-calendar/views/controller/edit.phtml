@@ -1,0 +1,52 @@
+<?php
+/**
+ * @package WP Simple Booking Calendar
+ *
+ * Copyright (c) 2010 Lennart Visscher
+ */
+?>
+
+<div id="sbc-wrapper" class="wrap">
+	<div id="icon-options-general" class="icon32"><br /></div>
+	<h2><a href="<?php echo $this->controllerUrl ?>"><?php esc_html_e('WP Simple Booking Calendar', 'sbc') ?></a></h2>
+	
+	<div class="postbox-container">
+		<div class="metabox-holder">
+			<div class="meta-box-sortables ui-sortable">
+				
+				<form id="edit-calendar" method="post" action="">
+
+					<div class="postbox">
+						<div class="handlediv" title="<?php esc_attr_e('Click to toggle', 'sbc') ?>"><br /></div>
+						<h3 class="hndle"><span><?php echo esc_html($this->actionName) ?></span></h3>
+						<div class="inside">
+							<p>
+								<label for="calendarName"><?php esc_html_e('Calendar Name', 'sbc') ?></label>
+								<input type="text" id="calendarName" name="calendarName" class="required widefat" value="<?php echo esc_attr($this->calendarName) ?>" minlength="3" maxlength="200" />
+							</p>
+							<div id="sbc-calendar-wrapper">
+								<?php $this->includeCalendarEditor = true; $this->render('calendar/calendar') ?>
+							</div>
+						</div>
+					</div>
+					
+					<p class="submit">
+						<?php wp_nonce_field($this->nonceAction) ?>
+						<input type="hidden" name="calendarData" value="" />
+						<input class="button-primary" type="submit" name="submit" value="<?php esc_attr_e('Save Changes', 'sbc') ?>" />
+					</p>
+					
+				</form>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php if (current_user_can('manage_options')): ?>
+<script type="text/javascript">
+//<![CDATA[
+	sbcCalendarDataJson = '<?php echo json_encode((is_object($this->calendarData) ? $this->calendarData : (object) array())); ?>';
+//]]>
+</script>
+<?php endif ?>
