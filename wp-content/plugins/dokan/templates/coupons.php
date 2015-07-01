@@ -12,9 +12,9 @@ $is_edit_page           = isset( $_GET['view'] ) && $_GET['view'] == 'add_coupon
             <header class="dokan-dashboard-header dokan-clearfix">
                 <span class="left-header-content dokan-left">
                     <h1 class="entry-title">
-                        <?php _e( 'Coupon', 'dokan' ); ?>
+                        <?php _e( 'Special Offer', 'dokan' ); ?>
                     <?php if ( $is_edit_page ) {
-                        printf( '<small> - %s</small>', __( 'Edit Coupon', 'dokan' ) );
+                        printf( '<small> - %s</small>', __( 'Edit Special Offer', 'dokan' ) );
                     } ?>
                     </h1>
                 </span>

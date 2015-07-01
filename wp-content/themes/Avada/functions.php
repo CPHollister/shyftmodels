@@ -1623,3 +1623,13 @@ function avada_layerslider_ready() {
 	}
 }
 add_action( 'layerslider_ready', 'avada_layerslider_ready' );
+
+/* Order Notes */
+add_filter('woocommerce_checkout_fields', 'custom_woocommerce_checkout_fields');
+ 
+function custom_woocommerce_checkout_fields( $fields ) {
+ 
+     $fields['order']['order_comments']['placeholder'] = 'Add last minute notes to model...';
+ 
+     return $fields;
+}

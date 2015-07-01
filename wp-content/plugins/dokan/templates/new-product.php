@@ -32,7 +32,7 @@
                                 <div class="instruction-inside">
                                     <input type="hidden" name="feat_image_id" class="dokan-feat-image-id" value="0">
                                     <i class="fa fa-cloud-upload"></i>
-                                    <a href="#" class="dokan-feat-image-btn dokan-btn"><?php _e( 'Upload Product Image', 'dokan' ); ?></a>
+                                    <a href="#" class="dokan-feat-image-btn dokan-btn"><?php _e( 'Upload Main Profile Image', 'dokan' ); ?></a>
                                 </div>
 
                                 <div class="image-wrap dokan-hide">
@@ -43,12 +43,12 @@
                         </div>
                         <div class="dokan-w6">
                             <div class="dokan-form-group">
-                                <input class="dokan-form-control" name="post_title" id="post-title" type="text" placeholder="<?php esc_attr_e( 'Product name..', 'dokan' ); ?>" value="<?php echo dokan_posted_input( 'post_title' ); ?>">
+                                <input class="dokan-form-control" name="post_title" id="post-title" type="text" placeholder="<?php esc_attr_e( 'Profile name..', 'dokan' ); ?>" value="<?php echo dokan_posted_input( 'post_title' ); ?>">
                             </div>
 
                             <div class="dokan-form-group">
                                 <div class="dokan-input-group">
-                                    <span class="dokan-input-group-addon"><?php echo get_woocommerce_currency_symbol(); ?></span>
+                                    <span class="dokan-input-group-addon">Rate per Hour<?php echo get_woocommerce_currency_symbol(); ?></span>
                                     <input class="dokan-form-control" name="price" id="product-price" type="text" placeholder="0.00" value="<?php echo dokan_posted_input( 'price' ); ?>">
                                 </div>
                             </div>

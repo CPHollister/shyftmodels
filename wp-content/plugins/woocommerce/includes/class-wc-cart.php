@@ -428,7 +428,7 @@ class WC_Cart {
 				if ( ! $_product || ! $_product->exists() || $_product->post->post_status == 'trash' ) {
 					$this->set_quantity( $cart_item_key, 0 );
 
-					return new WP_Error( 'invalid', __( 'A model who is no longer available was removed from your cart.', 'woocommerce' ) );
+					return new WP_Error( 'invalid', __( 'An item which is no longer available was removed from your cart.', 'woocommerce' ) );
 				}
 			}
 

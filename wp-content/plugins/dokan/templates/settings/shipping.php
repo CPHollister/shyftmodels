@@ -359,7 +359,7 @@ $dps_refund_policy       = get_user_meta( $user_id, '_dps_refund_policy', true )
 
 <!-- Added for Render content via Jquery -->
 
-<div class="dps-shipping-location-content" id="dps-shipping-hidden-location-content">
+<div class="dps-shipping-location-content" id="dps-shipping-hidden-lcoation-content">
     <table class="dps-shipping-table">
         <tbody>
 

@@ -39,7 +39,7 @@ get_header( 'shop' );
                             the_widget( 'Dokan_Store_Location', array( 'title' => __( 'Store Location', 'dokan' ) ), $args );
                         }
                         if( dokan_get_option( 'contact_seller', 'dokan_general', 'on' ) == 'on' ) {
-                            the_widget( 'Dokan_Store_Contact_Form', array( 'title' => __( 'Contact Model', 'dokan' ) ), $args );
+                            the_widget( 'Dokan_Store_Contact_Form', array( 'title' => __( 'Contact Seller', 'dokan' ) ), $args );
                         }
                     }
 
@@ -82,7 +82,7 @@ get_header( 'shop' );
 
             <?php } else { ?>
 
-                <p class="dokan-info"><?php _e( 'No profile was found for this model!', 'dokan' ); ?></p>
+                <p class="dokan-info"><?php _e( 'No products were found of this seller!', 'dokan' ); ?></p>
 
             <?php } ?>
         </div>

@@ -24,7 +24,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 		<tr>
 			<th class="product-remove">&nbsp;</th>
 			<th class="product-thumbnail">&nbsp;</th>
-			<th class="product-name">&nbsp;</th>
+			<th class="product-name"><?php _e( 'Model', 'woocommerce' ); ?></th>
 			<th class="product-price"><?php _e( 'Rate', 'woocommerce' ); ?></th>
 			<th class="product-quantity"><?php _e( 'Hours', 'woocommerce' ); ?></th>
 			<th class="product-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></th>
@@ -84,6 +84,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 						?>
 					</td>
 
+					<td>Select Hours your wish to book model.</td>
+
 					<td class="product-quantity">
 						<?php
 							if ( $_product->is_sold_individually() ) {
@@ -119,13 +121,13 @@ do_action( 'woocommerce_before_cart' ); ?>
 				<?php if ( WC()->cart->coupons_enabled() ) { ?>
 					<div class="coupon">
 
-						<label for="coupon_code"><?php _e( 'Coupon', 'woocommerce' ); ?>:</label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php _e( 'Coupon code', 'woocommerce' ); ?>" /> <input type="submit" class="button" name="apply_coupon" value="<?php _e( 'Apply Coupon', 'woocommerce' ); ?>" />
+						<label for="coupon_code"><?php _e( 'Special Offer', 'woocommerce' ); ?>:</label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php _e( 'Coupon code', 'woocommerce' ); ?>" /> <input type="submit" class="button" name="apply_coupon" value="<?php _e( 'Apply Special Offer Code', 'woocommerce' ); ?>" />
 
 						<?php do_action( 'woocommerce_cart_coupon' ); ?>
 					</div>
 				<?php } ?>
 
-				<input type="submit" class="button" name="update_cart" value="<?php _e( 'Update Cart', 'woocommerce' ); ?>" />
+				<input type="submit" class="button" name="update_cart" value="<?php _e( 'Update Booking', 'woocommerce' ); ?>" />
 
 				<?php do_action( 'woocommerce_cart_actions' ); ?>
 

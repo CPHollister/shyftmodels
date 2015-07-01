@@ -23,6 +23,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php endif; ?>
 
-<p><?php printf( __( 'You can access your account area to view your orders and change your password here: %s.', 'woocommerce' ), wc_get_page_permalink( 'myaccount' ) ); ?></p>
+<p>You can access your account area to view your orders and change your password here: <a href="https://www.shyftmodels.com/dashboard/" target="_blank">https://www.shyftmodels.com/dashboard/</a></p>
 
 <?php do_action( 'woocommerce_email_footer' ); ?>

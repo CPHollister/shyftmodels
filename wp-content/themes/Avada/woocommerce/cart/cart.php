@@ -23,9 +23,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 	<thead>
 		<tr>
 			<?php // Avada edit ?>
-			<th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
-			<th class="product-price"><?php _e( 'Price', 'woocommerce' ); ?></th>
-			<th class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
+			<th class="product-name"><?php _e( 'Model', 'woocommerce' ); ?></th>
+			<th class="product-price"><?php _e( 'Rate', 'woocommerce' ); ?></th>
+			<th class="product-quantity"><?php _e( 'Hours Booked', 'woocommerce' ); ?></th>
 			<th class="product-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></th>
 			<th class="product-remove">&nbsp;</th>
 		</tr>
@@ -128,7 +128,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 	
 	<div class="cart-totals-buttons">
 		<?php woocommerce_cart_totals(); ?>
-		<input type="submit" class="fusion-button button-default button-medium button default medium" name="update_cart" value="<?php _e( 'Update Cart', 'woocommerce' ); ?>" />
+		<input type="submit" class="fusion-button button-default button-medium button default medium" name="update_cart" value="<?php _e( 'Update Booking', 'woocommerce' ); ?>" />
 		<input type="submit" class="checkout-button fusion-button button-default button-medium button default medium alt wc-forward" name="proceed" value="<?php _e( 'Proceed to Checkout', 'woocommerce' ); ?> &rarr;" />
 
 		<?php do_action( 'woocommerce_cart_actions' ); ?>

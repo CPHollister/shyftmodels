@@ -58,7 +58,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			do_action( 'woocommerce_single_product_summary' );
 		?>
 
+		<p class="select-hours">Select hours you wish to book</p>
+
 	</div><!-- .summary -->
+
 
 	<?php
 		/**

@@ -10,18 +10,16 @@
                     <?php dokan_product_listing_status_filter(); ?>
 
                     <span class="dokan-add-product-link">
-                        <a href="<?php echo dokan_get_navigation_url( 'new-product' ); ?>" class="dokan-btn dokan-btn-theme dokan-right"><i class="fa fa-briefcase">&nbsp;</i> <?php _e( 'ADD NEW PROFILE', 'dokan' ); ?></a>
+                        <a href="<?php echo dokan_get_navigation_url( 'new-product' ); ?>" class="dokan-btn dokan-btn-theme dokan-right"><i class="fa fa-briefcase">&nbsp;</i> <?php _e( 'Add new product', 'dokan' ); ?></a>
                     </span>
                 </div>
 
                 <?php dokan_product_dashboard_errors(); ?>
-
                 <!--
                 <div class="dokan-w12">
                     <?php dokan_product_listing_filter(); ?>
                 </div>
                 -->
-
                 <table class="table table-striped product-listing-table">
                     <thead>
                         <tr>
@@ -30,10 +28,10 @@
                             <th><?php _e( 'Status', 'dokan' ); ?></th>
                             <!--<th><?php _e( 'SKU', 'dokan' ); ?></th>-->
                             <!--<th><?php _e( 'Stock', 'dokan' ); ?></th>-->
-                            <th><?php _e( 'Rate/Hour', 'dokan' ); ?></th>
+                            <th><?php _e( 'Hourly Rate', 'dokan' ); ?></th>
                             <!--<th><?php _e( 'Type', 'dokan' ); ?></th>-->
                             <th><?php _e( 'Views', 'dokan' ); ?></th>
-                            <th><?php _e( 'Date', 'dokan' ); ?></th>
+                            <th><?php _e( 'Create Date', 'dokan' ); ?></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -132,7 +130,8 @@
                                         }
                                         ?>
                                     </td>
-                                    <!--<td>
+                                    <!--
+                                    <td>
                                         <?php
                                             if( $product->product_type == 'grouped' ):
                                                 echo '<span class="product-type tips grouped" title="' . __( 'Grouped', 'woocommerce' ) . '"></span>';
@@ -155,7 +154,8 @@
                                                 echo '<span class="product-type tips ' . $product->product_type . '" title="' . ucfirst( $product->product_type ) . '"></span>';
                                             endif;
                                         ?>
-                                    </td>-->
+                                    </td>
+                                    -->
                                     <td>
                                         <?php echo (int) get_post_meta( $post->ID, 'pageview', true ); ?>
                                     </td>

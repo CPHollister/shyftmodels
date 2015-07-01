@@ -110,6 +110,8 @@ global $woocommerce, $product, $post;
 
 	<?php endif; ?>
 
+
 </form>
+
 
 <?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>

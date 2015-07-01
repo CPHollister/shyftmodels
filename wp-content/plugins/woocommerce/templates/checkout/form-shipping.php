@@ -55,7 +55,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php if ( ! WC()->cart->needs_shipping() || WC()->cart->ship_to_billing_address_only() ) : ?>
 
-			<h3><?php _e( 'Additional Information', 'woocommerce' ); ?></h3>
+			<h3><?php _e( 'Additional Booking Info', 'woocommerce' ); ?></h3>
 
 		<?php endif; ?>
 

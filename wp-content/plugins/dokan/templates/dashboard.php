@@ -32,7 +32,7 @@ $reviews_url    = dokan_get_navigation_url( 'reviews' );
                             <div class="count"><?php echo dokan_number_format( $pageviews ); ?></div>
                         </li>
                         <li>
-                            <div class="title"><?php _e( 'Bookings', 'dokan' ); ?></div>
+                            <div class="title"><?php _e( 'Order', 'dokan' ); ?></div>
                             <div class="count">
                                 <?php
                                 $total = $orders_counts->{'wc-completed'} + $orders_counts->{'wc-processing'} + $orders_counts->{'wc-on-hold'};
@@ -55,7 +55,7 @@ $reviews_url    = dokan_get_navigation_url( 'reviews' );
                 </div> <!-- .big-counter -->
 
                 <div class="dashboard-widget orders">
-                    <div class="widget-title"><i class="fa fa-shopping-cart"></i> <?php _e( 'Bookings', 'dokan' ); ?></div>
+                    <div class="widget-title"><i class="fa fa-shopping-cart"></i> <?php _e( 'Orders', 'dokan' ); ?></div>
 
                     <?php
                     $order_data = array(
@@ -138,6 +138,39 @@ $reviews_url    = dokan_get_navigation_url( 'reviews' );
                         </li>
                     </ul>
                 </div> <!-- .reviews -->
+
+                <div class="dashboard-widget products">
+                    <div class="widget-title">
+                        <i class="icon-briefcase"></i> <?php _e( 'Products', 'dokan' ); ?>
+
+                        <span class="pull-right">
+                            <a href="<?php echo dokan_get_navigation_url( 'new-product' ); ?>"><?php _e( '+ Add new product', 'dokan' ); ?></a>
+                        </span>
+                    </div>
+
+                    <ul class="list-unstyled list-count">
+                        <li>
+                            <a href="<?php echo $products_url; ?>">
+                                <span class="title"><?php _e( 'Total', 'dokan' ); ?></span> <span class="count"><?php echo $post_counts->total; ?></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo add_query_arg( array( 'post_status' => 'publish' ), $products_url ); ?>">
+                                <span class="title"><?php _e( 'Live', 'dokan' ); ?></span> <span class="count"><?php echo $post_counts->publish; ?></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo add_query_arg( array( 'post_status' => 'draft' ), $products_url ); ?>">
+                                <span class="title"><?php _e( 'Offline', 'dokan' ); ?></span> <span class="count"><?php echo $post_counts->draft; ?></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo add_query_arg( array( 'post_status' => 'pending' ), $products_url ); ?>">
+                                <span class="title"><?php _e( 'Pending Review', 'dokan' ); ?></span> <span class="count"><?php echo $post_counts->pending; ?></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- .products -->
 
             </div> <!-- .col-md-6 -->
 

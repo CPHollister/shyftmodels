@@ -309,7 +309,7 @@ if ( ! $from_shortcode ) {
                                         <input type="hidden" name="feat_image_id" class="dokan-feat-image-id" value="<?php echo $feat_image_id; ?>">
 
                                         <i class="fa fa-cloud-upload"></i>
-                                        <a href="#" class="dokan-feat-image-btn btn btn-sm"><?php _e( 'Upload a product cover image', 'dokan' ); ?></a>
+                                        <a href="#" class="dokan-feat-image-btn btn btn-sm"><?php _e( 'Upload a profile cover image', 'dokan' ); ?></a>
                                     </div>
 
                                     <div class="image-wrap<?php echo $wrap_class; ?>">
